@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@android:color/transparent</item>
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="colorAccent">@color/softBlue</item>
+        <item name="colorPrimary">@color/blue</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="TextNormalStyle">
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextNormalStyleWhite">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextBigStyle">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TextBigStyleWhite">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TextNormalCapsStyle" parent="TextNormalStyle">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextNormalCapsBoldStyle" parent="TextNormalCapsStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.AlertDialog.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

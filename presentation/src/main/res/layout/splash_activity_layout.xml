@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/ic_company"
+        android:layout_width="@dimen/ic_size"
+        android:layout_height="@dimen/ic_size"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/ic_neutral_profile"
+        app:layout_constraintBottom_toBottomOf="@+id/anim_splash"
+        app:layout_constraintEnd_toEndOf="@+id/anim_splash"
+        app:layout_constraintStart_toStartOf="@+id/anim_splash"
+        app:layout_constraintTop_toTopOf="@+id/anim_splash" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim_splash"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/anim_loading_splash" />
+
+    <ImageView
+        android:id="@+id/ic_wifi_connection"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/default_margin_16"
+        android:src="@drawable/ic_signal_wifi_off"
+        android:tint="@color/darkGray"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/tv_retry_msg"
+        app:layout_constraintRight_toLeftOf="@+id/tv_retry_msg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_retry_msg"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_retry_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_32"
+        android:layout_marginEnd="@dimen/default_margin_16"
+        android:text="@string/splash_retry"
+        android:textAllCaps="true"
+        android:textColor="@color/darkGray"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/anim_splash"
+        app:layout_constraintRight_toLeftOf="@+id/anim_splash"
+        app:layout_constraintTop_toBottomOf="@+id/anim_splash"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

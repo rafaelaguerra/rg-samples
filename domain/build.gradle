@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+apply plugin: "kotlin-android-extensions"
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // rxjava
+    implementation "io.reactivex.rxjava2:rxjava:${rxJava}"
+    implementation "io.reactivex.rxjava2:rxkotlin:${rxkotlin}"
+
+    // di
+    implementation "org.koin:koin-android:${koinVersion}"
+    
+    rootProject.ext.testDependencies.each {
+        testImplementation it
+    }
+}

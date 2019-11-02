@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/v_selected_item"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin_8"
+        android:layout_marginTop="@dimen/default_margin_8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_profile_name"
+            style="@style/TextNormalStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Repo Name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:paddingTop="@dimen/default_margin_8"
+                android:paddingBottom="@dimen/default_margin_8"
+                android:src="@drawable/ic_post"
+                android:tint="@color/blue" />
+
+            <TextView
+                android:id="@+id/tv_number_of_posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textAllCaps="true"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                tools:text="232" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:padding="@dimen/default_margin_8"
+                android:src="@drawable/ic_photo_library"
+                android:tint="@color/gray" />
+
+            <TextView
+                android:id="@+id/tv_number_of_albums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textAllCaps="true"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                tools:text="232" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/default_margin_8"
+            android:background="@color/gray" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rafaela Guerra: Android examples</string>
+    <string name="generic_error">Ups..Something went wrong!</string>
+
+    <string name="dialog_title">Title</string>
+    <string name="dialog_description">Description</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="ok">OK</string>
+</resources>

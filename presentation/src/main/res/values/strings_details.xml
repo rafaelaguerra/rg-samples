@@ -1,0 +1,5 @@
+<resources>
+    <string name="profile_detail_company">Company: %s</string>
+    <string name="post_title">Title:</string>
+    <string name="post_body">Body:</string>
+</resources>
